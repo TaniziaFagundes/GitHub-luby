@@ -9,6 +9,7 @@ const Input = ({ input, setInput }) => {
           setInput(e.target.value);
           e.preventDefault();
         }}
+        placeholder="Usuário"
       ></input>
     </Container>
   );
