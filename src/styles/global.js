@@ -5,7 +5,8 @@ export default createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: 'Helvetica Neue'      
+        font-family: 'Helvetica Neue';
+        text-decoration: none;   
     }
 
     :root{
@@ -18,6 +19,8 @@ export default createGlobalStyle`
         --green: #63BF1F;
         --grayBorder: #7070705A;
         --white: #FFFFFF;
+        --menuItens: #A5A5A5;
+        --cardFallow: #5252525D;
 
     }
 

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   input {
     width: 90vw;
+    max-width: 30rem;
     padding: 0.8rem;
     font-size: 15pt;
     margin: 0 auto;
