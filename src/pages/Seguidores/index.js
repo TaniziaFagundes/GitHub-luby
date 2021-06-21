@@ -1,5 +1,5 @@
 import { Container, Top, List } from "./styled";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { BiArrowBack } from "react-icons/bi";
 import { FollowersContext } from "../../providers/Followers";
 import Menu from "../../components/Menu";
@@ -18,7 +18,7 @@ const Seguidores = () => {
       </Top>
       <List>
         {followers.map((item) => (
-          <CardSegue item={item} />
+          <CardSegue item={item} key={item.id} />
         ))}
       </List>
       <Menu />

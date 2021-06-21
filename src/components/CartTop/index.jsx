@@ -2,7 +2,7 @@ import { Container, Content } from "./styled";
 import { FiLogOut } from "react-icons/fi";
 import { useHistory } from "react-router-dom";
 
-const CardTop = () => {
+const CardTop = ({ user }) => {
   const history = useHistory();
 
   const logout = () => {
@@ -11,6 +11,7 @@ const CardTop = () => {
   };
   return (
     <Container>
+      <div>#{user.login}</div>
       <Content>
         <button onClick={logout}>
           <p>Sair</p>

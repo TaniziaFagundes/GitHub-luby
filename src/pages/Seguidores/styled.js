@@ -7,6 +7,13 @@ export const Container = styled.div`
 `;
 export const List = styled.div``;
 
+export const ContentPerfil = styled.div`
+  position: absolute;
+  width: 100vw;
+  z-index: 2;
+  background-color: var(--black);
+`;
+
 export const Top = styled.div`
   background-color: var(--black);
   height: 10vh;

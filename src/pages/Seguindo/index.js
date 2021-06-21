@@ -18,7 +18,7 @@ const Seguindo = () => {
       </Top>
       <List>
         {following.map((item) => (
-          <CardSegue item={item} />
+          <CardSegue item={item} key={item.id} />
         ))}
       </List>
       <Menu />

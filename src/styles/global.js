@@ -7,6 +7,7 @@ export default createGlobalStyle`
         box-sizing: border-box;
         font-family: 'Helvetica Neue';
         text-decoration: none;   
+       
     }
 
     :root{

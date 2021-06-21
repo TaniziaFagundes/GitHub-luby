@@ -18,7 +18,7 @@ const Repos = () => {
       </Top>
       <List>
         {repos.map((item) => (
-          <CardRepos item={item} />
+          <CardRepos item={item} key={item.id} />
         ))}
       </List>
       <Menu />

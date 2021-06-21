@@ -12,7 +12,6 @@ export const FollowersProvider = ({ children }) => {
     API.get(`/users/${name}/followers`)
       .then((response) => {
         setFollowers(response.data);
-        console.log(followers);
         localStorage.setItem("@Git:followers", JSON.stringify(followers));
       })
       .catch((error) => console.log(error));

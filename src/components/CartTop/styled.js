@@ -2,15 +2,18 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   background-color: var(--black);
-  height: 6rem;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  div {
+    margin: 0 1rem;
+    margin-bottom: 3rem;
+  }
 `;
 
 export const Content = styled.div`
   background-color: var(--black);
-  height: 6rem;
-  display: flex;
-  align-items: start;
-  justify-content: flex-end;
 
   button {
     display: flex;

@@ -6,6 +6,7 @@ export const Container = styled.div`
   border-bottom: 1px solid var(--grayBorder);
   padding: 1.3rem 0;
   color: var(--white);
+
   p {
     font-size: 1.3rem;
   }
@@ -21,8 +22,11 @@ export const Container = styled.div`
     width: 6pt;
     border-radius: 0 5rem 5rem 0;
   }
-  section {
+  button {
     position: absolute;
     right: 2rem;
+    background: none;
+    border: none;
+    color: var(--white);
   }
 `;

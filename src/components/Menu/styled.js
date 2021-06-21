@@ -10,6 +10,7 @@ export const Container = styled.div`
   bottom: 0;
   width: 100vw;
   border-radius: 1rem 1rem 0 0;
+
   a {
     display: flex;
     flex-direction: column;
