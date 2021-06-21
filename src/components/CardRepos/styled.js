@@ -4,7 +4,6 @@ export const Container = styled.div`
   color: var(--white);
   border-bottom: 1px solid var(--grayBorder);
   padding: 1rem 0;
-
   p {
     padding: 1rem;
   }

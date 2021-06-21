@@ -1,4 +1,4 @@
-import { Container, Top } from "./styled";
+import { Container, Top, List } from "./styled";
 import { useContext } from "react";
 import { ReposContext } from "../../providers/Repos";
 import { BiArrowBack } from "react-icons/bi";
@@ -16,9 +16,11 @@ const Repos = () => {
         </Link>
         <p>{repos.length} repositórios</p>
       </Top>
-      {repos.map((item) => (
-        <CardRepos item={item} />
-      ))}
+      <List>
+        {repos.map((item) => (
+          <CardRepos item={item} />
+        ))}
+      </List>
       <Menu />
     </Container>
   );

@@ -9,7 +9,7 @@ export const FollowingProvider = ({ children }) => {
   );
 
   const FollowingSearch = (name) => {
-    API.get(`/users/${name}/fallowing`)
+    API.get(`/users/${name}/following`)
       .then((response) => {
         setFollowing(response.data);
         localStorage.setItem("@Git:following", JSON.stringify(following));

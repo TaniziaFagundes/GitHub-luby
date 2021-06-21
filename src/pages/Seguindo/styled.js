@@ -1,10 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 3rem;
-`;
+export const Container = styled.div``;
 export const List = styled.div``;
 
 export const Top = styled.div`
