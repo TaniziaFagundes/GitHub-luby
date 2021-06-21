@@ -1,5 +1,5 @@
 import { Container } from "./styled";
-import { BiArrowBack } from "react-icons/bi";
+import { FiArrowRight } from "react-icons/fi";
 const CardSegue = ({ item }) => {
   return (
     <Container>
@@ -7,7 +7,7 @@ const CardSegue = ({ item }) => {
       <img src={item.avatar_url} alt="avatar" />
       <p>#{item.login}</p>
       <section>
-        <BiArrowBack size={25} />
+        <FiArrowRight size={25} />
       </section>
     </Container>
   );
