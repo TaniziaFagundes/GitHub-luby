@@ -9,6 +9,7 @@ export const UserProvider = ({ children }) => {
   const [user, setUser] = useState(
     JSON.parse(localStorage.getItem("@Git:user")) || []
   );
+  const [error, setError] = useState("");
 
   const history = useHistory();
 
@@ -19,11 +20,11 @@ export const UserProvider = ({ children }) => {
         localStorage.setItem("@Git:user", JSON.stringify(user));
         history.push("/home");
       })
-      .catch((error) => console.log(error));
+      .catch((error) => setError(error));
   };
 
   return (
-    <UserContext.Provider value={{ user, UserSearch }}>
+    <UserContext.Provider value={{ user, UserSearch, error, setError }}>
       {children}
     </UserContext.Provider>
   );

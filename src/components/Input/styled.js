@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  display: flex;
+  align-items: center;
   input {
     width: 90vw;
     max-width: 30rem;
@@ -17,4 +19,10 @@ export const Container = styled.div`
       border: 3px solid var(--yellow);
     }
   }
+`;
+
+export const Error = styled.div`
+  position: absolute;
+  right: 3rem;
+  color: var(--red);
 `;
