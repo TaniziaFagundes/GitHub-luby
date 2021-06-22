@@ -7,9 +7,8 @@ export const FollowingProvider = ({ children }) => {
   const [following, setFollowing] = useState(
     JSON.parse(localStorage.getItem("@Git:following")) || []
   );
-
   const FollowingSearch = (name) => {
-    API.get(`/users/${name}/following`)
+    API.get(`/users/${name}/following?per_page=100`)
       .then((response) => {
         setFollowing(response.data);
         localStorage.setItem("@Git:following", JSON.stringify(following));

@@ -10,7 +10,7 @@ export const ReposProvider = ({ children }) => {
   );
 
   const reposSearch = (name) => {
-    API.get(`/users/${name}/repos`)
+    API.get(`/users/${name}/repos?per_page=100`)
       .then((response) => {
         setRepos(response.data);
         localStorage.setItem("@Git:repos", JSON.stringify(repos));
