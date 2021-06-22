@@ -1,5 +1,6 @@
 import { Container, Top, List } from "./styled";
-import { useContext, useState } from "react";
+import { useContext } from "react";
+import { UserContext } from "../../providers/User";
 import { BiArrowBack } from "react-icons/bi";
 import { FollowersContext } from "../../providers/Followers";
 import Menu from "../../components/Menu";
@@ -8,13 +9,14 @@ import { Link } from "react-router-dom";
 
 const Seguidores = () => {
   const { followers } = useContext(FollowersContext);
+  const { user } = useContext(UserContext);
   return (
     <Container>
       <Top>
         <Link to="/home">
           <BiArrowBack size={30} />
         </Link>
-        <p>{followers.length} seguidores</p>
+        <p>{user.followers} seguidores</p>
       </Top>
       <List>
         {followers.map((item) => (

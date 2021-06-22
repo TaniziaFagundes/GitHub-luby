@@ -13,6 +13,7 @@ export const FollowersProvider = ({ children }) => {
       .then((response) => {
         console.log(response);
         setFollowers(response.data);
+        console.log(followers);
         localStorage.setItem("@Git:followers", JSON.stringify(followers));
       })
       .catch((error) => console.log(error));
