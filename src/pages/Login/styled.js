@@ -1,4 +1,16 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+export const animationIMG = keyframes`
+  from{
+    opacity:0;
+    transform:translateY(-300px);
+
+  }
+  to{
+    opacity:1;
+    transform: translateY(0px)
+  }
+`;
 
 export const Container = styled.div`
   display: flex;
@@ -15,5 +27,6 @@ export const Content = styled.div`
     width: 98.12pt;
     height: 96.78pt;
     margin-bottom: 1rem;
+    animation: ${animationIMG} 2s;
   }
 `;

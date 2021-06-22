@@ -15,11 +15,10 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  svg {
     color: var(--menuItens);
-  }
-  p {
-    color: var(--menuItens);
+
+    :hover {
+      color: var(--black);
+    }
   }
 `;
