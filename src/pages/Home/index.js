@@ -1,4 +1,4 @@
-import { Container, Perfil, Bio } from "./styled";
+import { Container } from "./styled";
 import Menu from "../../components/Menu";
 import CardTop from "../../components/CartTop";
 import CardPerfil from "../../components/CardPerfil";

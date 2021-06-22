@@ -3,7 +3,6 @@ import { Container, Perfil } from "./styled";
 import CardDetails from "../CardDetails";
 import CardFallow from "../CardFallow";
 const CardPerfil = ({ user }) => {
-  console.log(user);
   return (
     <Container>
       <Perfil>

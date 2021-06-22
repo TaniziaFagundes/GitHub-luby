@@ -11,9 +11,7 @@ export const FollowersProvider = ({ children }) => {
   const FollowersSearch = (name) => {
     API.get(`/users/${name}/followers?per_page=100`)
       .then((response) => {
-        console.log(response);
         setFollowers(response.data);
-        console.log(followers);
         localStorage.setItem("@Git:followers", JSON.stringify(followers));
       })
       .catch((error) => console.log(error));

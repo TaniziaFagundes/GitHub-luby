@@ -14,7 +14,7 @@ export const UserProvider = ({ children }) => {
   const history = useHistory();
 
   const UserSearch = (name) => {
-    API.get("/users/" + name)
+    API.get(`/users/${name}`)
       .then((response) => {
         setUser(response.data);
         localStorage.setItem("@Git:user", JSON.stringify(user));

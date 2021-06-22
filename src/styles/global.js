@@ -29,6 +29,4 @@ export default createGlobalStyle`
         background-color: var(--body);
     }
 
-  
-
 `;
