@@ -10,7 +10,7 @@ const Card = () => {
     <Container>
       <div>
         <h1>{user.followers}</h1>
-        <p>Seguidores</p>
+        <p>Seguidores teste rebase 3</p>
       </div>
       <div>
         <h1>{user.following}</h1>
