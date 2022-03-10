@@ -1,11 +1,10 @@
-import { Container } from "./styled";
 
 const Button = ({ text, children, ...rest }) => {
   return (
-    <Container type="button" {...rest}>
+    <Button type="button" {...rest}>
       {text}
       {children}
-    </Container>
+    </Button>
   );
 };
 

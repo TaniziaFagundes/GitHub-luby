@@ -8,6 +8,8 @@ const CardPerfil = ({ user }) => {
       <Perfil>
         <img src={user.avatar_url} alt="avatar"></img>
         <CardDetails title={user.name} description={user.email} />
+        Testando rebase 1
+        Testando REBASE 2
       </Perfil>
       <CardFallow />
       <CardDetails title="Bio" description={user.bio} />
