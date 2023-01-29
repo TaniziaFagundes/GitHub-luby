@@ -9,7 +9,7 @@ import Github from "../../asserts/github.png";
 const Login = () => {
   const { UserSearch } = useContext(UserContext);
   const [input, setInput] = useState("");
-
+  console.log('teste')
   return (
     <Container>
       <Content>
