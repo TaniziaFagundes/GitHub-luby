@@ -42,5 +42,8 @@
   },
   "optionalDependencies": {
     "babel-loader": "8.1.0"
+  },
+  "engines": {
+    "node": "14.17.5"
   }
 }
